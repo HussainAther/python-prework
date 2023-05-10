@@ -1,10 +1,13 @@
 """
-Question 1: Write a function to print “hello_USERNAME!” USERNAME is the input of the function. 
+Question 1: Write a function to print "hello_USERNAME!" USERNAME is the input of the function. 
 
 The first line of the code has been defined as below.
 """
 
 def hello_name(user_name):
+    """
+    Return a nice little hello message for the user.  
+    """
     print("hello_" + user_name + "!")
 
 """
@@ -12,6 +15,9 @@ Question 2: Write a python function, first_odds that prints the odd numbers from
 """
 
 def first_odds():
+    """
+    Print odd numbers. There's no return for this one. 
+    """
     for i in range(1, 101, 2):
         print(i)
 
@@ -23,6 +29,9 @@ The first line of the code has been defined as below.
 """
 
 def max_num_in_list(a_list):
+    """
+    Get the max of some list. 
+    """
     if len(a_list) == 0:
         return None
     else:
@@ -40,6 +49,9 @@ A leap year is divisible by 4, but not divisible by 100, unless it is also divis
 """
     
 def is_leap_year(a_year):
+    """
+    Is is a leap year? 
+    """
     if a_year % 4 == 0:
         if a_year % 100 == 0:
             if a_year % 400 == 0:
@@ -60,10 +72,10 @@ For example, [2,3,4,5,6,7] are consecutive numbers, but [1,2,4,5] are not consec
     
 def is_consecutive(a_list):
     if len(a_list) < 2:
-        return True  # A list of one or fewer elements is always consecutive
+        return True  # A list of one or fewer elements is always consecutive.
 
-    a_list = sorted(a_list)
-    for i in range(len(a_list) - 1):
-        if a_list[i+1] - a_list[i] != 1:
+    a_list = sorted(a_list) # Sort the list. 
+    for i in range(len(a_list) - 1): # Begin with the penultimate list member. 
+        if a_list[i+1] - a_list[i] != 1: # Check the difference between it and the previous list member. 
             return False
     return True

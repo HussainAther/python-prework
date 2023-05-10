@@ -35,11 +35,11 @@ def max_num_in_list(a_list):
     if len(a_list) == 0:
         return None
     else:
-        max_num = a_list[0]
-        for num in a_list:
-            if num > max_num:
-                max_num = num
-        return max_num
+        m = a_list[0]
+        for n in a_list:
+            if n > m:
+                m = n
+        return m
     
 """
 Question 4:

@@ -79,3 +79,9 @@ def is_consecutive(a_list):
         if a_list[i+1] - a_list[i] != 1: # Check the difference between it and the previous list member. 
             return False
     return True
+
+# Test cases
+# print(is_consecutive([1,2,3]))
+# print(is_consecutive([1,1,1]))
+# print(is_consecutive([3,2,1]))
+

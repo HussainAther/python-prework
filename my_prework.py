@@ -71,9 +71,6 @@ For example, [2,3,4,5,6,7] are consecutive numbers, but [1,2,4,5] are not consec
 """
     
 def is_consecutive(a_list):
-    if len(a_list) < 2:
-        return True  # A list of one or fewer elements is always consecutive.
-
     a_list = sorted(a_list) # Sort the list. 
     for i in range(len(a_list) - 1): # Begin with the penultimate list member. 
         if a_list[i+1] - a_list[i] != 1: # Check the difference between it and the previous list member. 

@@ -32,14 +32,11 @@ def max_num_in_list(a_list):
     """
     Get the max of some list. 
     """
-    if len(a_list) == 0:
-        return None
-    else:
-        m = a_list[0]
-        for n in a_list:
-            if n > m:
-                m = n
-        return m
+    m = a_list[0]
+    for n in a_list:
+        if n > m:
+            m = n
+    return m
     
 """
 Question 4:
